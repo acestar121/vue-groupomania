@@ -1,40 +1,27 @@
-Openclassroom Projet 7 Groupomania : Créer un réseau social d'entreprise
+Openclassroom Project 7 Groupomania: Create a corporate social network
 
-cloner le projet : `https://github.com/MurielM87/Groupomania.git`
+Frontend: CLI View - npm install - npm run serve
 
-Frontend : Vue CLI 
-    - npm install
-    - npm run serve
+Backend: Nodejs - Database: MySQL Workbench - npm install
+-npm start
 
-Backend : Nodejs - Database : MySQL Workbench
-    - npm install
-    - npm start
+connection to the database with your credentials:
+create a config.json file from the model.config.json template and put your own identifiers - DB_HOST="" - DB_USER="" - DB_PASSWORD= "" - DB_NAME="" - DB_dialect=""
+and for the administrator account: - ADMIN_PSEUDO = "" - ADMIN_EMAIL = "" - ADMIN_PASSWORD = ""
 
-connexion à la base de données avec vos identifiants : 
-créer un fichier config.json à partir du modèle model.config.json et mettre vos propres identifiants
-    - DB_HOST=""
-    - DB_USER=""
-    - DB_PASSWORD= ""
-    - DB_NAME=""
-    - DB_dialect=""
-et pour le compte administrateur : 
-    - ADMIN_PSEUDO = ""
-    - ADMIN_EMAIL = ""
-    - ADMIN_PASSWORD = ""
+Functional specifications:
 
-    
+- login page: allows the user to log in or create an account if they do not already have one. Creating the account will require a minimum of information, and the connection will be made using email and password only.
+- login functionality: the user must have the ability to log out, the user's session persists while logged in, and the login data must be secure.
+- home page: must list the posts created by different users, from the most recent to the oldest.
+- creation of a post: a user must be able to create a post, which contains text and an image. He must also be able to modify and delete his posts.
+- like system: a user must be able to like a post, only once per post.
+- administrator role: to be able to carry out moderation, an "administrator" user will be created, who will have the rights to modify/delete all posts on the social network.
 
-Spécifications fonctionelles : 
-- page de connexion : permet à l'utilisateur de se connecter ou de créer un compte s'il n'en possède pas déjà un. La création du compte demandera un minimum d'informations, et la connexion se fera uniquement à partir du mail et du mot de passe.
-- fonctionnalité de connexion: l'utilisateur doit avoir la possibilité de se déconnecter, la session de l'utilisateur persiste pendant qu'il est connecté et les données de connexion doivent être sécurisées.
-- page d'accueil : doit lister les posts crées par les différents utilisateurs, du plus récent au plus ancien.
-- création d'un post : un utilisateur doit pouvoir créer un post, qui contient du texte et une image. Il doit aussi pouvoir modifier et supprimer ses posts.
-- système de like : un utilisateur doit pouvoir liker un post, une seule fois par post.
-- rôle d'administrateur : pour pouvoir faire de la modération, un utilisateur "administrateur" sera créer, qui aura les droits de modification/suppression de tous les posts du réseau social.
+Graphic identity :
 
-Identité graphique : 
-- police d'écriture : Lato,
-- couleurs : 
-    primaire : #FD2D01,
-    secondaire : #FFD7D7,
-    tertiaire : #4E5166.
+- font: Lato,
+- colors:
+  primary: #FD2D01,
+  secondary: #FFD7D7,
+  tertiary: #4E5166.
